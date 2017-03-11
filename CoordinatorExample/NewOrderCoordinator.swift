@@ -35,7 +35,7 @@ class NewOrderCoordinator: RootViewCoordinator {
         return self.navigationController
     }
     
-    var delegate: NewOrderCoordinatorDelegate? = nil
+    weak var delegate: NewOrderCoordinatorDelegate?
     
     var orderPayload: NewOrderCoordinatorPayload?
     

@@ -10,7 +10,7 @@ public class DrinkTypeViewController: UITableViewController {
     
     private let services: Services
     
-    public var delegate: DrinkTypeControllerDelegate? = nil
+    public weak var delegate: DrinkTypeControllerDelegate?
     
     lazy var closeBarButtonItem: UIBarButtonItem = {
         let closeBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(self.closeButtonTapped))
