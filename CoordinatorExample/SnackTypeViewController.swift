@@ -9,7 +9,7 @@ public class SnackTypeViewController: UITableViewController {
     
     private let services: Services
     
-    public var delegate: SnackTypeViewControllerDelegate? = nil
+    public weak var delegate: SnackTypeViewControllerDelegate?
     
     private let snackTypes = [
         "Muffin",

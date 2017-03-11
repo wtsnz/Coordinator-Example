@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-public protocol SplashViewControllerDelegate {
+public protocol SplashViewControllerDelegate: class {
     func splashViewControllerDidTapNewOrder(splashViewController: SplashViewController)
 }
 
@@ -9,7 +9,7 @@ public class SplashViewController: UIViewController {
     
     private let services: Services
     
-    public var delegate: SplashViewControllerDelegate? = nil
+    public weak var delegate: SplashViewControllerDelegate?
     
     private var titleLabel: UILabel = UILabel()
     
