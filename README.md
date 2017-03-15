@@ -1,6 +1,6 @@
 # Coordinator Example
 
-This is the project to accompany my [blog post on the Coordinator Pattern](https://will.townsend.io/2016/ios-coordinator-pattern).
+This is the project to accompany my [blog post on the Coordinator Pattern](https://will.townsend.io/2016/an-ios-coordinator-pattern).
 
 ## 📍 Getting Started
 
