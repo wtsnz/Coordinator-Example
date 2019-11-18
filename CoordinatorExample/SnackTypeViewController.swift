@@ -47,7 +47,7 @@ public class SnackTypeViewController: UITableViewController {
         
         let snackType = self.snackTypes[indexPath.row]
         
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: nil)
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: nil)
         cell.textLabel?.text = snackType
         return cell
     }

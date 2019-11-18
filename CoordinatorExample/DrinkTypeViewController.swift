@@ -58,7 +58,7 @@ public class DrinkTypeViewController: UITableViewController {
         
         let drinkType = self.drinkTypes[indexPath.row]
         
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: nil)
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: nil)
         cell.textLabel?.text = drinkType
         return cell
     }
