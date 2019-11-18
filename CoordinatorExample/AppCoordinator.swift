@@ -65,6 +65,7 @@ extension AppCoordinator: SplashViewControllerDelegate {
         
         let newOrderCoordinator = NewOrderCoordinator(with: self.services)
         newOrderCoordinator.delegate = self
+        newOrderCoordinator.rootViewController.modalPresentationStyle = .fullScreen
         newOrderCoordinator.start()
         self.addChildCoordinator(newOrderCoordinator)
         self.rootViewController.present(newOrderCoordinator.rootViewController, animated: true, completion: nil)
