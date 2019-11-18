@@ -31,7 +31,7 @@ public class SplashViewController: UIViewController {
         let newOrderButton = UIButton(type: .system)
         newOrderButton.setTitle("New order", for: .normal)
         newOrderButton.backgroundColor = .red
-        newOrderButton.addTarget(self, action: #selector(didTapNewOrder), for: UIControlEvents.touchUpInside)
+        newOrderButton.addTarget(self, action: #selector(didTapNewOrder), for: UIControl.Event.touchUpInside)
         
         self.view.addSubview(newOrderButton)
         
@@ -71,15 +71,15 @@ public class SplashViewController: UIViewController {
         paragraphStyle.lineSpacing = 20
         
         let fontAttributes = [
-            NSForegroundColorAttributeName: UIColor.black,
-            NSParagraphStyleAttributeName: paragraphStyle,
-            NSFontAttributeName: UIFont.systemFont(ofSize: 40)
+            NSAttributedString.Key.foregroundColor: UIColor.black,
+            NSAttributedString.Key.paragraphStyle: paragraphStyle,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 40)
         ]
         
         let largeFontAttributes = [
-            NSForegroundColorAttributeName: UIColor.black,
-            NSParagraphStyleAttributeName: paragraphStyle,
-            NSFontAttributeName: UIFont.boldSystemFont(ofSize: 70)
+            NSAttributedString.Key.foregroundColor: UIColor.black,
+            NSAttributedString.Key.paragraphStyle: paragraphStyle,
+            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 70)
         ]
         
         let string = NSMutableAttributedString()
